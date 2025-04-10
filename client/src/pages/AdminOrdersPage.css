@@ -1,0 +1,206 @@
+/* AdminOrdersPage.css */
+
+.admin-orders-container {
+    padding: 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #f8f9fa 100%);
+    min-height: 100vh;
+  }
+  
+  .admin-orders-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a2e;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .admin-orders-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff4d6d, #f72585);
+    border-radius: 2px;
+  }
+  
+  .admin-orders-table {
+    background-color: white;
+    border-radius: 12px !important;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+  }
+  
+  .admin-orders-table .MuiTableHead-root {
+    background: linear-gradient(45deg, #1a1a2e, #16213e);
+  }
+  
+  .admin-orders-table .MuiTableCell-head {
+    color: white !important;
+    font-weight: 600 !important;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.5px;
+  }
+  
+  .order-row {
+    transition: all 0.3s ease;
+  }
+  
+  .order-row:hover {
+    background-color: rgba(248, 77, 109, 0.03);
+    transform: translateY(-2px);
+  }
+  
+  .admin-orders-table .MuiTableCell-body {
+    font-family: 'Space Grotesk', sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  }
+  
+  .order-id-cell {
+    font-weight: 600;
+    color: #1a1a2e;
+  }
+  
+  .customer-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .status-chip {
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    font-size: 0.7rem !important;
+    letter-spacing: 0.5px;
+    border-radius: 6px !important;
+  }
+  
+  .status-chip.PENDING {
+    background-color: #ffefd5 !important;
+    color: #ff8c00 !important;
+  }
+  
+  .status-chip.PROCESSING {
+    background-color: #e0f7fa !important;
+    color: #00acc1 !important;
+  }
+  
+  .status-chip.SHIPPED {
+    background-color: #e3f2fd !important;
+    color: #1976d2 !important;
+  }
+  
+  .status-chip.DELIVERED {
+    background-color: #e8f5e9 !important;
+    color: #388e3c !important;
+  }
+  
+  .status-chip.CANCELLED {
+    background-color: #ffebee !important;
+    color: #d32f2f !important;
+  }
+  
+  .view-order-btn {
+    background: white !important;
+    border: 1px solid #1a1a2e !important;
+    color: #1a1a2e !important;
+    border-radius: 8px !important;
+    padding: 0.3rem 1rem !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .view-order-btn:hover {
+    background: linear-gradient(45deg, #1a1a2e, #16213e) !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(26, 26, 46, 0.1) !important;
+  }
+  
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+  
+  .error-alert {
+    border-radius: 12px !important;
+    background: linear-gradient(45deg, #ff4d6d, #f72585) !important;
+    color: white !important;
+    box-shadow: 0 8px 20px rgba(247, 37, 133, 0.2) !important;
+  }
+  
+  .error-alert .MuiAlert-icon {
+    color: white !important;
+  }
+  
+  .access-denied {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+  }
+  
+  .access-denied-text {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #ff4d6d, #f72585);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .access-denied-icon {
+    font-size: 4rem !important;
+    margin-bottom: 1rem;
+    color: #ff4d6d;
+  }
+  
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+  }
+  
+  .empty-state-icon {
+    font-size: 4rem !important;
+    margin-bottom: 1rem;
+    color: #84dcc6;
+  }
+  
+  .empty-state-text {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .admin-orders-container {
+      padding: 1rem;
+    }
+    
+    .admin-orders-title {
+      font-size: 2rem;
+    }
+    
+    .admin-orders-table {
+      overflow-x: auto;
+    }
+    
+    .customer-cell {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.2rem;
+    }
+  }

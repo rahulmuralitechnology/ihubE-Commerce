@@ -1,0 +1,142 @@
+/* Sidebar.css */
+
+.sidebar-drawer {
+    width: 240px;
+    flex-shrink: 0;
+  }
+  
+  .sidebar-drawer .MuiDrawer-paper {
+    width: 240px;
+    background: linear-gradient(45deg, #1a1a2e, #16213e);
+    color: white;
+    border-right: none;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar-toolbar {
+    min-height: 64px !important;
+  }
+  
+  .sidebar-list {
+    padding: 0.5rem;
+  }
+  
+  .sidebar-item {
+    border-radius: 8px;
+    margin: 0.25rem 0;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar-item:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  .sidebar-item.Mui-selected {
+    background: linear-gradient(45deg, #ff4d6d, #f72585) !important;
+  }
+  
+  .sidebar-item.Mui-selected:hover {
+    background: linear-gradient(45deg, #f72585, #ff4d6d) !important;
+  }
+  
+  .sidebar-item.Mui-selected .sidebar-icon {
+    color: white !important;
+  }
+  
+  .sidebar-icon {
+    color: rgba(255, 255, 255, 0.8) !important;
+    min-width: 40px !important;
+  }
+  
+  .sidebar-icon .icon {
+    font-size: 1.25rem;
+  }
+  
+  .sidebar-text-primary {
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .sidebar-divider {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    margin: 0.75rem 0 !important;
+  }
+  
+  /* Admin Section Styles */
+  .admin-header {
+    margin-top: 0.5rem !important;
+  }
+  
+  .admin-header .sidebar-icon {
+    color: #84dcc6 !important;
+  }
+  
+  .admin-header .sidebar-text-primary {
+    font-weight: 600 !important;
+  }
+  
+  .expand-icon {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .admin-collapse {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+  }
+  
+  .admin-submenu {
+    padding-left: 0.5rem;
+  }
+  
+  .admin-subitem {
+    padding-left: 2rem !important;
+  }
+  
+  .admin-subitem .sidebar-icon {
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+  
+  .admin-subitem .sidebar-icon .icon {
+    font-size: 1.1rem;
+  }
+  
+  .admin-subitem:hover .sidebar-icon {
+    color: white !important;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 900px) {
+    .sidebar-drawer {
+      width: 72px;
+    }
+    
+    .sidebar-drawer .MuiDrawer-paper {
+      width: 72px;
+      overflow: hidden;
+    }
+    
+    .sidebar-text {
+      display: none;
+    }
+    
+    .sidebar-item {
+      justify-content: center;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    
+    .sidebar-icon {
+      min-width: auto !important;
+      margin-right: 0 !important;
+      justify-content: center;
+    }
+    
+    .admin-header {
+      display: none;
+    }
+    
+    .admin-collapse {
+      display: none;
+    }
+  }

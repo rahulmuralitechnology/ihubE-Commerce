@@ -1,0 +1,179 @@
+/* OrderStatusManager.css */
+
+.status-manager-container {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 16px !important;
+    background: white !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03) !important;
+  }
+  
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .loading-spinner {
+    color: #f72585 !important;
+  }
+  
+  .error-alert {
+    border-radius: 12px !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .not-found-text {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #666;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .section-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    color: #1a1a2e;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem !important;
+  }
+  
+  .status-control-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .status-chip {
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    font-size: 0.8rem !important;
+    letter-spacing: 0.5px;
+    border-radius: 8px !important;
+  }
+  
+  .status-chip.pending {
+    background-color: #fff3e0 !important;
+    color: #ff6d00 !important;
+  }
+  
+  .status-chip.processing {
+    background-color: #e3f2fd !important;
+    color: #1976d2 !important;
+  }
+  
+  .status-chip.shipped {
+    background-color: #e0f7fa !important;
+    color: #00acc1 !important;
+  }
+  
+  .status-chip.delivered {
+    background-color: #e8f5e9 !important;
+    color: #388e3c !important;
+  }
+  
+  .status-chip.cancelled {
+    background-color: #ffebee !important;
+    color: #d32f2f !important;
+  }
+  
+  .status-select {
+    min-width: 150px !important;
+    border-radius: 12px !important;
+  }
+  
+  .status-select .MuiSelect-select {
+    font-family: 'Space Grotesk', sans-serif !important;
+    padding: 0.5rem 1rem !important;
+  }
+  
+  .status-option {
+    font-family: 'Space Grotesk', sans-serif !important;
+  }
+  
+  .update-button {
+    border-radius: 12px !important;
+    padding: 0.5rem 1.5rem !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    background: linear-gradient(45deg, #1a1a2e, #16213e) !important;
+    color: white !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .update-button:hover {
+    background: linear-gradient(45deg, #16213e, #1a1a2e) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 26, 46, 0.2) !important;
+  }
+  
+  .update-button:disabled {
+    background: #e0e0e0 !important;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  .button-spinner {
+    color: white !important;
+  }
+  
+  .section-divider {
+    background-color: rgba(0, 0, 0, 0.08) !important;
+    margin: 1.5rem 0 !important;
+  }
+  
+  .history-list {
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 12px;
+    padding: 0.5rem !important;
+  }
+  
+  .history-item {
+    padding: 0.5rem 1rem !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .history-item:hover {
+    background-color: rgba(0, 0, 0, 0.03) !important;
+  }
+  
+  .history-item-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .changed-by {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.9rem;
+  }
+  
+  .history-item-text {
+    margin: 0 !important;
+  }
+  
+  .history-item-date {
+    font-family: 'Space Grotesk', sans-serif !important;
+    color: #666 !important;
+    font-size: 0.8rem !important;
+    margin-top: 0.25rem !important;
+  }
+  
+  @media (max-width: 768px) {
+    .status-control-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .status-select {
+      width: 100%;
+    }
+    
+    .update-button {
+      width: 100%;
+    }
+  }

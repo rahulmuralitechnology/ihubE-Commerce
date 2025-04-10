@@ -1,0 +1,257 @@
+/* OrderDetailPage.css */
+
+.order-detail-container {
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+  }
+  
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .loading-spinner {
+    color: #f72585 !important;
+  }
+  
+  .error-container,
+  .not-found-container,
+  .unauthorized-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .error-alert {
+    border-radius: 12px !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .order-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    color: #1a1a2e;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  
+  .status-chip {
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    font-size: 0.9rem !important;
+    letter-spacing: 0.5px;
+    border-radius: 8px !important;
+  }
+  
+  .status-chip.pending {
+    background-color: #fff3e0 !important;
+    color: #ff6d00 !important;
+  }
+  
+  .status-chip.processing {
+    background-color: #e3f2fd !important;
+    color: #1976d2 !important;
+  }
+  
+  .status-chip.shipped {
+    background-color: #e0f7fa !important;
+    color: #00acc1 !important;
+  }
+  
+  .status-chip.delivered {
+    background-color: #e8f5e9 !important;
+    color: #388e3c !important;
+  }
+  
+  .status-chip.cancelled {
+    background-color: #ffebee !important;
+    color: #d32f2f !important;
+  }
+  
+  .order-meta {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+  }
+  
+  .meta-item {
+    font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 0.8rem;
+  }
+  
+  .section-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.8rem;
+    color: #1a1a2e;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .order-items-table {
+    border-radius: 12px !important;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03) !important;
+    margin-bottom: 2rem;
+  }
+  
+  .table-header-row {
+    background: linear-gradient(45deg, #1a1a2e, #16213e) !important;
+  }
+  
+  .table-header-cell {
+    color: white !important;
+    font-weight: 600 !important;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.5px;
+  }
+  
+  .table-row {
+    transition: all 0.3s ease;
+  }
+  
+  .table-row:hover {
+    background-color: rgba(248, 77, 109, 0.03) !important;
+  }
+  
+  .product-cell {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03) !important;
+  }
+  
+  .product-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+  
+  .product-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+  }
+  
+  .product-sku {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #666;
+    font-size: 0.8rem;
+  }
+  
+  .price-cell,
+  .quantity-cell,
+  .total-cell {
+    font-family: 'Space Grotesk', sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03) !important;
+  }
+  
+  .empty-cell {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #666;
+    padding: 2rem !important;
+  }
+  
+  .subtotal-label,
+  .total-label {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .subtotal-value,
+  .total-value {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .total-value {
+    color: #f72585;
+  }
+  
+  .status-manager {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .back-button {
+    background: linear-gradient(45deg, #1a1a2e, #16213e) !important;
+    color: white !important;
+    border-radius: 12px !important;
+    padding: 0.8rem 1.8rem !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .back-button:hover {
+    background: linear-gradient(45deg, #16213e, #1a1a2e) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 26, 46, 0.2) !important;
+  }
+  
+  .view-all-button {
+    border-radius: 12px !important;
+    padding: 0.8rem 1.8rem !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    transition: all 0.3s ease !important;
+    border-color: #1a1a2e !important;
+    color: #1a1a2e !important;
+  }
+  
+  .view-all-button:hover {
+    background-color: rgba(26, 26, 46, 0.05) !important;
+  }
+  
+  @media (max-width: 768px) {
+    .order-detail-container {
+      padding: 1.5rem;
+    }
+    
+    .order-title {
+      font-size: 2rem;
+    }
+    
+    .order-items-table {
+      overflow-x: auto;
+    }
+    
+    .action-buttons {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .back-button,
+    .view-all-button {
+      width: 100%;
+    }
+  }

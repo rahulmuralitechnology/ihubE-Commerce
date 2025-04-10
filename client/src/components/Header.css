@@ -1,0 +1,151 @@
+/* Header.css */
+
+.header-appbar {
+    background: linear-gradient(45deg, #1a1a2e, #16213e) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 9999;
+  }
+  
+  .header-toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem !important;
+  }
+  
+  .header-logo {
+    font-family: 'Bebas Neue', cursive !important;
+    letter-spacing: 1px;
+    font-size: 1.8rem !important;
+    background: linear-gradient(45deg, #ff4d6d, #f72585);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .logo-link {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+  }
+  
+  .logo-link:hover {
+    opacity: 0.9;
+  }
+  
+  .auth-section,
+  .guest-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .cart-icon {
+    transition: all 0.3s ease !important;
+  }
+  
+  .cart-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .cart-badge .MuiBadge-badge {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+  }
+  
+  .cart-icon-svg {
+    font-size: 1.5rem !important;
+  }
+  
+  .user-menu-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-transform: none !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease !important;
+  }
+  
+  .user-menu-button:hover {
+    opacity: 0.9;
+  }
+  
+  .user-avatar {
+    width: 32px !important;
+    height: 32px !important;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .user-name {
+    font-size: 0.9rem;
+  }
+  
+  .user-dropdown-menu {
+    margin-top: 0.5rem !important;
+  }
+  
+  .menu-paper {
+    border-radius: 12px !important;
+    margin-top: 0.5rem !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+    min-width: 200px !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+  }
+  
+  .menu-item {
+    font-family: 'Space Grotesk', sans-serif !important;
+    padding: 0.8rem 1.5rem !important;
+    transition: all 0.2s ease !important;
+  }
+  
+  .menu-item:hover {
+    background-color: rgba(26, 26, 46, 0.05) !important;
+  }
+  
+  .logout-item {
+    color: #f72585 !important;
+    font-weight: 600 !important;
+  }
+  
+  .auth-button {
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease !important;
+  }
+  
+  .auth-button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+  
+  .register-button {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 20px !important;
+    padding: 0.3rem 1.2rem !important;
+    margin-left: 0.5rem !important;
+  }
+  
+  @media (max-width: 768px) {
+    .header-toolbar {
+      padding: 0.5rem 1rem !important;
+    }
+    
+    .header-logo {
+      font-size: 1.5rem !important;
+    }
+    
+    .user-name {
+      display: none;
+    }
+    
+    .auth-button {
+      font-size: 0.8rem !important;
+      padding: 0.3rem 0.8rem !important;
+    }
+  }

@@ -1,0 +1,206 @@
+/* OrdersPage.css */
+
+.orders-page-container {
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+  }
+  
+  .page-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    color: #1a1a2e;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .page-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff4d6d, #f72585);
+    border-radius: 2px;
+  }
+  
+  .orders-table {
+    border-radius: 12px !important;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05) !important;
+  }
+  
+  .table-header {
+    background: linear-gradient(45deg, #1a1a2e, #16213e) !important;
+  }
+  
+  .header-cell {
+    color: white !important;
+    font-weight: 600 !important;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.5px;
+  }
+  
+  .order-row {
+    transition: all 0.3s ease;
+  }
+  
+  .order-row:hover {
+    background-color: rgba(248, 77, 109, 0.03) !important;
+  }
+  
+  .order-cell {
+    font-family: 'Space Grotesk', sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03) !important;
+  }
+  
+  .status-chip {
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    font-size: 0.7rem !important;
+    letter-spacing: 0.5px;
+    border-radius: 6px !important;
+  }
+  
+  .status-chip.delivered {
+    background-color: #e8f5e9 !important;
+    color: #388e3c !important;
+  }
+  
+  .status-chip.cancelled {
+    background-color: #ffebee !important;
+    color: #d32f2f !important;
+  }
+  
+  .status-chip.processing,
+  .status-chip.pending,
+  .status-chip.shipped {
+    background-color: #e3f2fd !important;
+    color: #1976d2 !important;
+  }
+  
+  .view-button {
+    border-radius: 8px !important;
+    padding: 0.3rem 1rem !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    border-color: #1a1a2e !important;
+    color: #1a1a2e !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .view-button:hover {
+    background-color: rgba(26, 26, 46, 0.05) !important;
+  }
+  
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .loading-spinner {
+    color: #f72585 !important;
+  }
+  
+  .error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .error-message {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #d32f2f;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .retry-button {
+    background: linear-gradient(45deg, #1a1a2e, #16213e) !important;
+    color: white !important;
+    border-radius: 12px !important;
+    padding: 0.8rem 1.8rem !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .retry-button:hover {
+    background: linear-gradient(45deg, #16213e, #1a1a2e) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 26, 46, 0.2) !important;
+  }
+  
+  .empty-orders-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .empty-orders-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+  }
+  
+  .empty-orders-subtitle {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .shop-button {
+    background: linear-gradient(45deg, #ff4d6d, #f72585) !important;
+    color: white !important;
+    border-radius: 12px !important;
+    padding: 0.8rem 2rem !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .shop-button:hover {
+    background: linear-gradient(45deg, #f72585, #ff4d6d) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(247, 37, 133, 0.2) !important;
+  }
+  
+  @media (max-width: 768px) {
+    .orders-page-container {
+      padding: 1.5rem;
+    }
+    
+    .page-title {
+      font-size: 2rem;
+    }
+    
+    .orders-table {
+      overflow-x: auto;
+    }
+    
+    .header-cell, .order-cell {
+      padding: 12px 8px !important;
+      font-size: 0.9rem;
+    }
+    
+    .view-button {
+      padding: 0.2rem 0.5rem !important;
+      font-size: 0.8rem;
+    }
+  }

@@ -1,0 +1,67 @@
+/* HomePage.css */
+
+.home-page-container {
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+  }
+  
+  .search-box-container {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .error-message {
+    color: #f72585;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: rgba(247, 37, 133, 0.1);
+    border-radius: 12px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+  
+  .loading-spinner {
+    color: #f72585 !important;
+  }
+  
+  .product-list {
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .home-page-container {
+      padding: 1rem;
+    }
+  
+    .search-box-container {
+      margin-bottom: 1.5rem;
+      padding: 0.5rem;
+      border-radius: 12px;
+    }
+  }
+  
+  /* Animation for product loading */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .product-list {
+    animation: fadeIn 0.5s ease-out forwards;
+  }

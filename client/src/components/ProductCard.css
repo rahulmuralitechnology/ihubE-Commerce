@@ -1,0 +1,148 @@
+/* ProductCard.css */
+
+.product-card {
+    border-radius: 16px !important;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: white !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03) !important;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .product-card.grid-view {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-card.list-view {
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+  
+  .product-image {
+    object-fit: contain;
+    background-color: #f8f9fa;
+  }
+  
+  .product-card.grid-view .product-image {
+    height: 200px;
+    padding: 1rem;
+  }
+  
+  .product-card.list-view .product-image {
+    width: 200px;
+    height: 200px;
+    padding: 1rem;
+  }
+  
+  .product-content {
+    flex-grow: 1;
+    padding: 1.5rem !important;
+  }
+  
+  .product-name {
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 600 !important;
+    color: #1a1a2e !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+    display: block;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .product-name:hover {
+    color: #f72585 !important;
+  }
+  
+  .product-description {
+    font-family: 'Space Grotesk', sans-serif !important;
+    color: #666 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .price-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .original-price {
+    font-family: 'Space Grotesk', sans-serif !important;
+    color: #999 !important;
+    text-decoration: line-through !important;
+  }
+  
+  .selling-price {
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 700 !important;
+    color: #f72585 !important;
+  }
+  
+  .discount-chip {
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 600 !important;
+    background: linear-gradient(45deg, #84dcc6, #00bbf9) !important;
+    color: white !important;
+  }
+  
+  .card-actions {
+    padding: 1rem 1.5rem !important;
+  }
+  
+  .add-to-cart-button {
+    border-radius: 12px !important;
+    padding: 0.5rem 1rem !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    background: linear-gradient(45deg, #1a1a2e, #16213e) !important;
+    color: white !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .add-to-cart-button:hover {
+    background: linear-gradient(45deg, #16213e, #1a1a2e) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 26, 46, 0.2) !important;
+  }
+  
+  .add-to-cart-button:disabled {
+    background: #e0e0e0 !important;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  .button-spinner {
+    color: white !important;
+  }
+  
+  @media (max-width: 768px) {
+    .product-card.list-view {
+      flex-direction: column;
+    }
+    
+    .product-card.list-view .product-image {
+      width: 100%;
+      height: auto;
+    }
+    
+    .product-name {
+      font-size: 1.1rem !important;
+    }
+    
+    .product-description {
+      font-size: 0.9rem !important;
+    }
+    
+    .add-to-cart-button {
+      width: 100%;
+    }
+  }

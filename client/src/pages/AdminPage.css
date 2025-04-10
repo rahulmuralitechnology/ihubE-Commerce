@@ -1,0 +1,186 @@
+/* AdminPage.css */
+
+.admin-container {
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+  }
+  
+  .admin-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a2e;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  
+  .admin-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff4d6d, #f72585);
+    border-radius: 2px;
+  }
+  
+  .admin-tabs {
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .admin-tab {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0.5px;
+  }
+  
+  .admin-tab.Mui-selected {
+    color: #f72585 !important;
+  }
+  
+  .admin-table-container {
+    border-radius: 12px !important;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+  }
+  
+  .admin-table-head {
+    background: linear-gradient(45deg, #1a1a2e, #16213e) !important;
+  }
+  
+  .admin-table-header {
+    color: white !important;
+    font-weight: 600 !important;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.5px;
+  }
+  
+  .admin-table-row {
+    transition: all 0.3s ease;
+  }
+  
+  .admin-table-row:hover {
+    background-color: rgba(248, 77, 109, 0.03) !important;
+    transform: translateY(-1px);
+  }
+  
+  .admin-table-cell {
+    font-family: 'Space Grotesk', sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03) !important;
+  }
+  
+  .admin-chip {
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    font-size: 0.7rem !important;
+    letter-spacing: 0.5px;
+    border-radius: 6px !important;
+  }
+  
+  .admin-chip.admin {
+    background-color: #e3f2fd !important;
+    color: #1976d2 !important;
+  }
+  
+  .admin-chip.user {
+    background-color: #e8f5e9 !important;
+    color: #388e3c !important;
+  }
+  
+  .admin-chip.delivered {
+    background-color: #e8f5e9 !important;
+    color: #388e3c !important;
+  }
+  
+  .admin-chip.cancelled {
+    background-color: #ffebee !important;
+    color: #d32f2f !important;
+  }
+  
+  .admin-chip.processing,
+  .admin-chip.shipped,
+  .admin-chip.pending {
+    background-color: #fff3e0 !important;
+    color: #ff6d00 !important;
+  }
+  
+  .admin-chip.unknown {
+    background-color: #f5f5f5 !important;
+    color: #616161 !important;
+  }
+  
+  .admin-view-button {
+    background: white !important;
+    border: 1px solid #1a1a2e !important;
+    color: #1a1a2e !important;
+    border-radius: 8px !important;
+    padding: 0.3rem 1rem !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    transition: all 0.3s ease !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+  }
+  
+  .admin-view-button:hover {
+    background: linear-gradient(45deg, #1a1a2e, #16213e) !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(26, 26, 46, 0.1) !important;
+  }
+  
+  .empty-message {
+    padding: 2rem !important;
+    color: #666;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .admin-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+  
+  .admin-spinner {
+    color: #f72585 !important;
+  }
+  
+  .admin-error,
+  .admin-access-denied {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .admin-alert {
+    border-radius: 12px !important;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .admin-container {
+      padding: 1rem;
+    }
+    
+    .admin-title {
+      font-size: 2rem;
+    }
+    
+    .admin-table-container {
+      overflow-x: auto;
+    }
+    
+    .admin-table {
+      min-width: 800px;
+    }
+  }

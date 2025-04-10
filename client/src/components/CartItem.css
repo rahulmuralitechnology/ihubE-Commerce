@@ -1,0 +1,132 @@
+/* CartItem.css */
+
+.cart-item-container {
+    margin-bottom: 1rem;
+  }
+  
+  .cart-item-content {
+    display: flex;
+    padding: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .cart-item-content:hover {
+    background-color: rgba(248, 77, 109, 0.03);
+  }
+  
+  .product-image-container {
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  .product-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+  }
+  
+  .product-description {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .price-quantity-container {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+  }
+  
+  .product-price {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: #f72585;
+  }
+  
+  .quantity-controls {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .quantity-input .MuiOutlinedInput-root {
+    border-radius: 8px !important;
+    width: 70px;
+  }
+  
+  .quantity-input .MuiInputBase-input {
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+    padding: 0.5rem !important;
+  }
+  
+  .delete-button {
+    transition: all 0.3s ease !important;
+  }
+  
+  .delete-button:hover {
+    background-color: rgba(211, 47, 47, 0.08) !important;
+  }
+  
+  .delete-icon {
+    color: #d32f2f !important;
+  }
+  
+  .item-total {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    color: #1a1a2e;
+    text-align: right;
+    margin-top: 0.5rem;
+  }
+  
+  .divider {
+    background-color: rgba(0, 0, 0, 0.08) !important;
+  }
+  
+  .loading-spinner {
+    color: #f72585 !important;
+  }
+  
+  @media (max-width: 768px) {
+    .cart-item-content {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .product-image-container {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .price-quantity-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .quantity-controls {
+      margin-left: 0;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }

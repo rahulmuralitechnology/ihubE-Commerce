@@ -1,0 +1,182 @@
+/* ProfilePage.css */
+
+.profile-page-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+  }
+  
+  .profile-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    color: #1a1a2e;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
+  }
+  
+  .profile-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff4d6d, #f72585);
+    border-radius: 2px;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+  }
+  
+  .profile-avatar {
+    width: 100px !important;
+    height: 100px !important;
+    font-size: 2.5rem !important;
+    background: linear-gradient(45deg, #1a1a2e, #16213e) !important;
+  }
+  
+  .profile-name-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .profile-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    color: #1a1a2e;
+  }
+  
+  .role-chip {
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 6px !important;
+    align-self: flex-start;
+  }
+  
+  .role-chip.admin {
+    background-color: #e3f2fd !important;
+    color: #1976d2 !important;
+  }
+  
+  .role-chip.user {
+    background-color: #e8f5e9 !important;
+    color: #388e3c !important;
+  }
+  
+  .profile-details {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+  }
+  
+  .detail-item {
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    align-items: baseline;
+  }
+  
+  .detail-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    color: #1a1a2e;
+    min-width: 120px;
+  }
+  
+  .detail-value {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #333;
+    flex-grow: 1;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .edit-button {
+    background: linear-gradient(45deg, #1a1a2e, #16213e) !important;
+    color: white !important;
+    border-radius: 12px !important;
+    padding: 0.8rem 1.8rem !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .edit-button:hover {
+    background: linear-gradient(45deg, #16213e, #1a1a2e) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 26, 46, 0.2) !important;
+  }
+  
+  .logout-button {
+    background: linear-gradient(45deg, #ff4d6d, #f72585) !important;
+    color: white !important;
+    border-radius: 12px !important;
+    padding: 0.8rem 1.8rem !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .logout-button:hover {
+    background: linear-gradient(45deg, #f72585, #ff4d6d) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(247, 37, 133, 0.2) !important;
+  }
+  
+  @media (max-width: 768px) {
+    .profile-page-container {
+      padding: 1.5rem;
+    }
+    
+    .profile-header {
+      flex-direction: column;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    
+    .profile-name-container {
+      align-items: center;
+    }
+    
+    .detail-item {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .detail-label {
+      min-width: auto;
+    }
+    
+    .action-buttons {
+      flex-direction: column;
+    }
+    
+    .edit-button,
+    .logout-button {
+      width: 100%;
+    }
+  }

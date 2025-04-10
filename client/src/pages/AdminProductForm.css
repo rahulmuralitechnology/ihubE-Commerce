@@ -1,0 +1,196 @@
+/* AdminProductForm.css */
+
+.admin-product-form-container {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+  }
+  
+  .admin-product-form-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a2e;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  
+  .admin-product-form-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff4d6d, #f72585);
+    border-radius: 2px;
+  }
+  
+  .admin-form-alert {
+    margin-bottom: 1.5rem !important;
+    border-radius: 12px !important;
+  }
+  
+  .admin-form-alert.error {
+    background: linear-gradient(45deg, #ff4d6d, #f72585) !important;
+    color: white !important;
+  }
+  
+  .admin-form-alert.success {
+    background: linear-gradient(45deg, #84dcc6, #00bbf9) !important;
+    color: white !important;
+  }
+  
+  .admin-product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .uploaded-file-info {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #666;
+  }
+  
+  .product-review-table {
+    max-height: 400px;
+    overflow: auto;
+    border-radius: 12px !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03) !important;
+  }
+  
+  .table-header {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600 !important;
+    background-color: #1a1a2e !important;
+    color: white !important;
+  }
+  
+  .table-row {
+    transition: all 0.3s ease;
+  }
+  
+  .table-row:hover {
+    background-color: rgba(248, 77, 109, 0.03) !important;
+  }
+  
+  .table-cell {
+    font-family: 'Space Grotesk', sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03) !important;
+  }
+  
+  .product-image-preview {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  
+  .form-grid {
+    margin-bottom: 1rem;
+  }
+  
+  .form-field .MuiOutlinedInput-root {
+    border-radius: 12px !important;
+  }
+  
+  .form-field .MuiInputLabel-root {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .form-field .MuiInputBase-input {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .upload-button,
+  .clear-button {
+    border-radius: 12px !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    padding: 0.5rem 1.5rem !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .upload-button:hover {
+    background: rgba(26, 26, 46, 0.05) !important;
+  }
+  
+  .clear-button {
+    border-color: #ff4d6d !important;
+    color: #ff4d6d !important;
+  }
+  
+  .clear-button:hover {
+    background: rgba(255, 77, 109, 0.05) !important;
+  }
+  
+  .submit-button {
+    border-radius: 12px !important;
+    padding: 1rem !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    background: linear-gradient(45deg, #1a1a2e, #16213e) !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .submit-button:hover {
+    background: linear-gradient(45deg, #16213e, #1a1a2e) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 26, 46, 0.2) !important;
+  }
+  
+  .submit-button:disabled {
+    background: #e0e0e0 !important;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  .submit-spinner {
+    color: white !important;
+  }
+  
+  .admin-access-denied {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .access-denied-text {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    background: linear-gradient(45deg, #ff4d6d, #f72585);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  @media (max-width: 768px) {
+    .admin-product-form-container {
+      padding: 1.5rem;
+    }
+    
+    .admin-product-form-title {
+      font-size: 2rem;
+    }
+    
+    .form-actions {
+      flex-direction: column;
+    }
+    
+    .upload-button,
+    .clear-button {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,243 @@
+/* AdminProductList.css */
+
+.admin-product-list-container {
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+  }
+  
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .page-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    color: #1a1a2e;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  
+  .page-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff4d6d, #f72585);
+    border-radius: 2px;
+  }
+  
+  .add-product-button {
+    background: linear-gradient(45deg, #1a1a2e, #16213e) !important;
+    color: white !important;
+    border-radius: 12px !important;
+    padding: 0.8rem 1.8rem !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .add-product-button:hover {
+    background: linear-gradient(45deg, #16213e, #1a1a2e) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 26, 46, 0.2) !important;
+  }
+  
+  .product-table-container {
+    border-radius: 12px !important;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+  }
+  
+  .table-header {
+    background: linear-gradient(45deg, #1a1a2e, #16213e) !important;
+  }
+  
+  .header-cell {
+    color: white !important;
+    font-weight: 600 !important;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.5px;
+  }
+  
+  .product-row {
+    transition: all 0.3s ease;
+  }
+  
+  .product-row:hover {
+    background-color: rgba(248, 77, 109, 0.03) !important;
+    transform: translateY(-1px);
+  }
+  
+  .product-cell {
+    font-family: 'Space Grotesk', sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03) !important;
+  }
+  
+  .current-price {
+    font-weight: 600;
+    color: #1a1a2e;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .actions-cell {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .edit-button, .delete-button {
+    transition: all 0.3s ease !important;
+  }
+  
+  .edit-button:hover {
+    background-color: rgba(25, 118, 210, 0.08) !important;
+  }
+  
+  .delete-button:hover {
+    background-color: rgba(211, 47, 47, 0.08) !important;
+  }
+  
+  .edit-icon {
+    color: #1976d2 !important;
+  }
+  
+  .delete-icon {
+    color: #d32f2f !important;
+  }
+  
+  .empty-row {
+    height: 100px;
+  }
+  
+  .empty-message {
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #666;
+    padding: 2rem !important;
+  }
+  
+  .delete-dialog {
+    border-radius: 16px !important;
+  }
+  
+  .dialog-paper {
+    border-radius: 16px !important;
+    padding: 1rem;
+    background: white !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .dialog-title {
+    font-family: 'Bebas Neue', cursive !important;
+    font-size: 1.8rem !important;
+    color: #1a1a2e !important;
+    padding-bottom: 0.5rem !important;
+  }
+  
+  .dialog-text {
+    font-family: 'Space Grotesk', sans-serif !important;
+    color: #666 !important;
+  }
+  
+  .dialog-actions {
+    padding: 1rem 1.5rem !important;
+  }
+  
+  .cancel-button {
+    border-radius: 8px !important;
+    padding: 0.5rem 1.5rem !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+  }
+  
+  .confirm-delete-button {
+    border-radius: 8px !important;
+    padding: 0.5rem 1.5rem !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    background-color: #d32f2f !important;
+    color: white !important;
+  }
+  
+  .confirm-delete-button:hover {
+    background-color: #b71c1c !important;
+  }
+  
+  .admin-access-denied {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .access-denied-text {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    background: linear-gradient(45deg, #ff4d6d, #f72585);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .loading-spinner {
+    color: #f72585 !important;
+  }
+  
+  .error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .error-text {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #d32f2f;
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .admin-product-list-container {
+      padding: 1.5rem;
+    }
+    
+    .header-section {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .page-title {
+      font-size: 2rem;
+    }
+    
+    .add-product-button {
+      width: 100%;
+    }
+    
+    .product-table-container {
+      overflow-x: auto;
+    }
+  }
